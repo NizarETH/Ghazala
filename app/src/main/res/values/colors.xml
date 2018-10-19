@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- The app wide background color -->
+
+    <color name="Black">#000000</color>
+
+
+    <!-- Text color of the date in the Calendar widget -->
+
+    <!-- Text color of declined events in agenda view -->
+    <!-- Text color of non-declined events in agenda view -->
+    <!-- Background Color of present/future events in agenda view  -->
+    <!-- Background Color of past events in agenda view  -->
+    <!-- Color of the separator between the past and the present/future in agenda view  -->
+    <!-- General background color in agenda view  -->
+    <!-- Agenda day item text color  -->
+    <!-- Color of the event location's text in an agenda item  -->
+    <!-- Color of the event location's text in an agenda item  -->
+    <!-- Color of text in the calendar view selection menu -->
+    <!-- Light color of text in the calendar view selection menu -->
+    <!-- Color of the separator between items in the agenda list -->
+    <!-- Text color of a selected items in the agenda list - trumps all other text colors -->
+    <!-- Background color of a selected items in the agenda list -->
+    <!-- Text color of the "new event" hint in day and week views -->
+
+    <!-- Text color of a clicked event in the day/week view -->
+    <!-- background color for for clicked days in month view-->
+    <!-- background color for the past -->
+
+    <!-- Event info colors -->
+
+    <color name="black1">#090909</color>
+    <color name="bleuCTM1">#2482C2</color>
+
+    <!-- The app wide background color -->
+
+
+    <!-- Text color of the date in the Calendar widget -->
+
+    <!-- Text color of declined events in agenda view -->
+    <!-- Text color of non-declined events in agenda view -->
+    <!-- Background Color of present/future events in agenda view  -->
+    <!-- Background Color of past events in agenda view  -->
+    <!-- Color of the separator between the past and the present/future in agenda view  -->
+    <!-- General background color in agenda view  -->
+    <!-- Agenda day item text color  -->
+    <!-- Color of the event location's text in an agenda item  -->
+    <!-- Color of the event location's text in an agenda item  -->
+    <!-- Color of text in the calendar view selection menu -->
+    <!-- Light color of text in the calendar view selection menu -->
+    <!-- Color of the separator between items in the agenda list -->
+    <!-- Text color of a selected items in the agenda list - trumps all other text colors -->
+    <!-- Background color of a selected items in the agenda list -->
+    <!-- Text color of the "new event" hint in day and week views -->
+
+    <!-- Text color of a clicked event in the day/week view -->
+    <!-- background color for for clicked days in month view-->
+    <!-- background color for the past -->
+
+    <!-- Event info colors -->
+
+    <!-- Text color of declined events in widget view -->
+    <!-- Text color of non-declined events in widget view -->
+    <!-- Text color for all day events in widget view -->
+
+     <color name="lightgrey">#dee0da</color>
+
+    <!-- Text color of declined events in widget view -->
+    <!-- Text color of non-declined events in widget view -->
+    <!-- Text color for all day events in widget view -->
+
+    <color name="light_gray">#dddddd</color>
+    <color name="transparentWhite">#88000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="soft_grey">#FF777777</color>
+    <color name="Yellow">#ffa713</color>
+    <color name="YellowGold">#FFBF4F</color>
+    <color name="RedLight">#ff7f7f</color>
+
+
+    <!-- Screens background color-->
+
+    <!-- dots inactive colors -->
+    <color name="red">#ea1111</color>
+    <!-- dots active colors -->
+    <color name="bleuDarkCTM">#e4b5fc</color>
+
+</resources>

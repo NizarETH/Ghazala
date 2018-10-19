@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/YellowGold"
+                android:elevation="4dp"
+                android:gravity="center">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/logo_ghazala" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/open_home"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp">
+
+                <com.stanly.ghazala.Widgets.ArrowImageView
+                    android:id="@+id/home"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/home"
+                    android:tint="@color/red"
+
+                    />
+
+                <com.stanly.ghazala.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/home"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/red" />
+
+            <LinearLayout
+                android:id="@+id/open_agenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <com.stanly.ghazala.Widgets.ArrowImageView
+                    android:id="@+id/agenda"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/agenda"
+                    android:tint="@color/red"
+
+                    />
+
+                <com.stanly.ghazala.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/agenda"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/red"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/open_time"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp">
+
+                <com.stanly.ghazala.Widgets.ArrowImageView
+                    android:id="@+id/horaire"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/clock"
+                    android:tint="@color/red"
+
+                    />
+
+                <com.stanly.ghazala.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/horaires"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/red" />
+
+            <LinearLayout
+                android:id="@+id/open_agences"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp">
+
+                <com.stanly.ghazala.Widgets.ArrowImageView
+                    android:id="@+id/agences"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+
+
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/map"
+                    android:tint="@color/red"
+
+                    />
+
+                <com.stanly.ghazala.Widgets.AutoResizeTextView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/agence"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/red" />
+
+            <LinearLayout
+
+                android:id="@+id/open_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+
+                >
+
+                <com.stanly.ghazala.Widgets.ArrowImageView
+                    android:id="@+id/services"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/works"
+                    android:tint="@color/red"
+
+                    />
+
+                <com.stanly.ghazala.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/services"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/red" />
+
+            <LinearLayout
+                android:id="@+id/open_career"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+
+                >
+
+                <com.stanly.ghazala.Widgets.ArrowImageView
+                    android:id="@+id/emploi"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/services"
+                    android:tint="@color/red"
+
+                    />
+
+                <com.stanly.ghazala.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/work"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:visibility="gone"
+
+                >
+
+                <com.stanly.ghazala.Widgets.ArrowImageView
+
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/sett"
+                    android:tint="@color/red"
+
+                    />
+
+                <com.stanly.ghazala.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Paramètres"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/red" />
+
+            <LinearLayout
+                android:id="@+id/open_contact"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp">
+
+                <com.stanly.ghazala.Widgets.ArrowImageView
+                    android:id="@+id/contact"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/tel"
+                    android:tint="@color/red"
+
+                    />
+
+                <com.stanly.ghazala.Widgets.AutoResizeTextView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/contact"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/red" />
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

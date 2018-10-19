@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/logo_ghazala"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:layout_margin="4dp"
+        android:textColor="@color/Black"
+        android:text="La société Ghazala Messagerie Express assure l’expédition, l’arrivage, le ramassage, la livraison, la retour de fonds, la gestion documentaire et propose à chaque client professionnel ou particulier une offre de prestation complète, variée et optimale grâce à une expérience riche et professionnelle sur le marché de la messagerie nationale.
+
+la prestation de la messagerie :       "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:layout_margin="4dp"
+        android:textColor="@color/Black"
+        android:text="- Disponibilité 24H/24H."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_margin="4dp"
+                android:textColor="@color/Black"
+                android:text="- Acheminement ou multi-colis."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_margin="4dp"
+                android:textColor="@color/Black"
+                android:text="- Tarification en fonction du poids, du volume."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_margin="4dp"
+                android:textColor="@color/Black"
+                android:text="- Fiabilité des délais de livraison."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_margin="4dp"
+                android:textColor="@color/Black"
+                android:text="- Tarification en fonction du poids, du volume."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_margin="4dp"
+                android:textColor="@color/Black"
+                android:text="- Ramassage à domicile."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_margin="4dp"
+                android:textColor="@color/Black"
+                android:text="- Livraison à domicile."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_margin="4dp"
+                android:textColor="@color/Black"
+                android:text="- Service additionnel pour la valeur déclarée.
+ "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+        android:textColor="@color/red"
+        android:text="Expédition"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:layout_margin="4dp"
+        android:textColor="@color/Black"
+        android:text="       - Expédition simple :
+
+L’équipe messagerie express de la société Ghazala assure l’acheminement de vos colis à votre destinataire contre un accusé de réception.
+
+       - Expédition contre remboursement :
+
+Avec l’option contre remboursement, Ghazala Messagerie Expresse assure l’envoi contre le versement d’un montant que vous fixez lors du dépôt et selon les modalités de paiements, espèces, chèques et traites.
+
+      - Expédition contre bon de livraison :
+
+Au moment de livrer le colis, le réceptionnaire doit signer et cacheter un bon de livraison au livreur.
+ "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+        android:textColor="@color/red"
+        android:text="Ramassage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:layout_margin="4dp"
+        android:textColor="@color/Black"
+        android:text="Le ramassage est un service mis en place par la société Ghazala Messagerie Express afin de faciliter au maximum votre processus d’expédition, ce service consiste à la collecte de vos marchandises, par un simple appel téléphonique, afin de mettre à votre disposition immédiatement un véhicule avec ramasseur."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+        android:textColor="@color/red"
+        android:text="Livraison      "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:layout_margin="4dp"
+        android:textColor="@color/Black"
+        android:text="Grâce à une connaissance du terrain, nos livreurs récupèrent les colis pour une livraison en mains propres à vos clients dans plusieurs agglomérations et villes du Royaume (domicile, lieu de travail et toutes autres adresses de votre choix)."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+        android:textColor="@color/red"
+        android:text="Fonds et paiements  "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:layout_margin="4dp"
+        android:textColor="@color/Black"
+        android:text="La société Ghazala Messagerie Express assure le retour de fonds en liquide, des chèques, des traites et des bons de livraison d’une manière régulière sur les services de messagerie de nos clients."/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

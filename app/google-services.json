@@ -1,0 +1,180 @@
+{
+  "project_info": {
+    "project_number": "570957323882",
+    "firebase_url": "https://myctm-3e545.firebaseio.com",
+    "project_id": "myctm-3e545",
+    "storage_bucket": "myctm-3e545.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570957323882:android:72a996c3c5e042aa",
+        "android_client_info": {
+          "package_name": "com.secretbox.pizza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570957323882-mqon9lctodoqj1k459h04r63fsfajeil.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBcZw95GweqBIBFcQ0nE-zpIRfuRabzBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570957323882:android:d7b6a7d3c633df0a",
+        "android_client_info": {
+          "package_name": "com.stanly.ctm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570957323882-s6b4iph5kep7aocn746u03oli4b5q1rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stanly.ctm",
+            "certificate_hash": "78a60b89c62f359c42a6447cf8f3eb3fe08eec03"
+          }
+        },
+        {
+          "client_id": "570957323882-mqon9lctodoqj1k459h04r63fsfajeil.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBcZw95GweqBIBFcQ0nE-zpIRfuRabzBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570957323882-mqon9lctodoqj1k459h04r63fsfajeil.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-4398691256924309~3262058276"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570957323882:android:0916416210a2285c",
+        "android_client_info": {
+          "package_name": "com.stanly.ghazala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570957323882-mqon9lctodoqj1k459h04r63fsfajeil.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBcZw95GweqBIBFcQ0nE-zpIRfuRabzBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570957323882:android:27ea2ea8395bcee2",
+        "android_client_info": {
+          "package_name": "com.stanly.portraits"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570957323882-mqon9lctodoqj1k459h04r63fsfajeil.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBcZw95GweqBIBFcQ0nE-zpIRfuRabzBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570957323882:android:ad55935959d33c93",
+        "android_client_info": {
+          "package_name": "com.stanly.retards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570957323882-mqon9lctodoqj1k459h04r63fsfajeil.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBcZw95GweqBIBFcQ0nE-zpIRfuRabzBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="2dp">
+
+    <LinearLayout
+        android:id="@+id/open_home"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="12dp"
+
+        android:orientation="horizontal">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+
+    android:layout_height="wrap_content">
+    <com.stanly.ghazala.Widgets.AutoResizeTextView
+        android:id="@+id/agence_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginRight="6dp"
+        android:text="casa"
+        android:textColor="@color/Yellow"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.stanly.ghazala.Widgets.AutoResizeTextView
+
+        android:id="@+id/agence_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:text="addresse"
+        android:layout_weight="1"
+        android:textColor="@color/soft_grey"
+        android:textSize="14sp" />
+</LinearLayout>
+
+
+        <ImageView
+
+            android:id="@+id/map_address"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/tel"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:tint="@color/Yellow" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="55dp"
+        android:background="@color/bleuDarkCTM"/>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.stanly.ctm.Widgets.AutoResizeTextView
+        android:id="@+id/agence_name"
+        android:textColor="@color/bleuDarkCTM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_weight="0.2"
+        android:text="casa"/>
+    <com.stanly.ctm.Widgets.AutoResizeTextView
+        android:layout_weight="0.8"
+
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:id="@+id/agence_address"
+        android:layout_width="wrap_content"
+        android:textColor="@color/bleuCTM1"
+        android:layout_height="wrap_content"
+        android:text="addresse"/>
+    </LinearLayout>
+ -->
+
+</LinearLayout>

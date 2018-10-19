@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Ghazala</string>
+
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="agence">Agences</string>
+
+    <string name="connect">Vérifiez votre connexion internet !</string>
+    <string name="close">Voulez-vous fermer l\'application ?</string>
+
+    <string name="chargement">Chargement...</string>
+    <string name="agenda">Agenda</string>
+    <string name="splash_title">© 2017 Ghazala horaires &amp; tarifs - Tous droits résérvés</string>
+    <string name="call_us">Appelez-nous :</string>
+    <string name="contact">Contact</string>
+    <string name="depart">Départ</string>
+    <string name="home">Home</string>
+
+    <string name="services">Services</string>
+    <string name="alert">Veuillez choisir la ville à partir la liste</string>
+    <string name="horaires">Horaires</string>
+    <string name="arrivee">Arrivée</string>
+    <string name="price2">Prix (DH)</string>
+    <string name="infos2">Infos</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="tomorrow">Demain</string>
+    <string name="search">Rechercher</string>
+    <string name="from">De :</string>
+    <string name="to">A  :</string>
+    <string name="work">Emplois</string>
+
+    <string name="infos">Information</string>
+    <string name="prem7"> Salon premium dans un autocar encore plus spacieux ;</string>
+    <string name="prem8">Plus d’espace dans l’autocar.</string>
+    <string name="prem6">Wifi à l’intérieur de l’autocar pour que vous restiez connecté tout au long de votre voyage ;</string>
+    <string name="prem5"> Journaux, collations et boissons pour rendre votre voyage plus agréable ;</string>
+    <string name="prem4">Climatisation et lumière personnalisées pour illuminer vos lectures et maîtriser la température de votre voyage ;</string>
+    <string name="prem3">Sièges très confortables avec tablettes et repose-jambes conçus spécialement pour vous offrir une détente et un confort optimaux ;</string>
+    <string name="autocar_info">L\'autocar passe par : </string>
+    <string name="prem1">Des autocars luxueux, un confort absolu, un service irréprochable, tout a bien été véhiculé à CTM! Faites l\’expérience d’un voyage alliant confort, sécurité et plaisir. </string>
+    <string name="prem2">Avec le service Premium de CTM, vous disposez d’une multitude d’avantages pour voyager dans les meilleures conditions :
+
+Opter pour CTM Premium, c’est voyager sans escale avec des départs en aller retour chaque jour via autoroute dans le plus grand confort pour relier directement Casablanca, Rabat, Agadir, Marrakech, Fès, Tanger, Tétouan, Oujda, Beni mellal et Safi.
+ </string>
+    <string name="stanly">Contacter le développeur de l\'application </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--Alerts-->
+
+    <!--Text sizes-->
+
+    <!-- sliding menu width -->
+    <dimen name="menu_width_res_phone">250dp</dimen>
+
+    <!-- List MYITEM Max and Min Height -->
+
+    <!-- Floating Button-->
+
+
+</resources>
