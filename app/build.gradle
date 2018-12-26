@@ -18,10 +18,7 @@ apply plugin: 'io.fabric'
        }
         signingConfigs {
             releaseconfig {
-                keyAlias 'release_key'
-                keyPassword 'nizar++.00'
-                storeFile file('C:\\Users\\lenovo\\AndroidStudioProjects\\GHAZALA\\app\\release.keystore')
-                storePassword 'nizar++.00'
+              
             }
         }
     buildTypes {
