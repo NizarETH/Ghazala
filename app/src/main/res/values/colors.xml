@@ -70,7 +70,7 @@
     <!-- Text color of declined events in widget view -->
     <!-- Text color of non-declined events in widget view -->
     <!-- Text color for all day events in widget view -->
-
+    <color name="android_green">#FFA4C639</color>
     <color name="light_gray">#dddddd</color>
     <color name="transparentWhite">#88000000</color>
     <color name="white">#FFFFFFFF</color>

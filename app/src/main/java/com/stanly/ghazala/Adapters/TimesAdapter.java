@@ -2,6 +2,7 @@ package com.stanly.ghazala.Adapters;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,8 @@ import android.widget.TextView;
 import com.stanly.ghazala.Activities.MainActivity;
 import com.stanly.ghazala.Beans.Data;
 import com.stanly.ghazala.Beans.HoraireData;
+import com.stanly.ghazala.Fragments.DetailsLine;
+import com.stanly.ghazala.MyApplication;
 import com.stanly.ghazala.R;
 import com.stanly.ghazala.Widgets.AutoResizeTextView;
 
@@ -28,10 +31,7 @@ public class TimesAdapter extends BaseAdapter {
     private String from ;
     private String to ;
     private String date ;
-    private String depart ;
-    private String prix ;
-    private String arrivee;
-    private String passed_info;
+
 
     private PopupWindow pw;
 
@@ -62,31 +62,31 @@ public class TimesAdapter extends BaseAdapter {
     public View getView(final int i, View view, ViewGroup viewGroup) {
 
 
-        View row = view;
+
         ViewHolder holder = null;
         try {
 
-            if (row == null) {
+            if (view == null) {
                 LayoutInflater inflater = ((MainActivity) mainActivity).getLayoutInflater();
-                row = inflater.inflate(R.layout.line_data, viewGroup, false);
+                view = inflater.inflate(R.layout.line_data, viewGroup, false);
                 holder = new ViewHolder();
-                holder.heure_depart = (AutoResizeTextView)row.findViewById(R.id.heure_depart);
-                holder.heure_arrivee = (AutoResizeTextView)row.findViewById(R.id.heure_arrivee);
+                holder.heure_depart = (AutoResizeTextView)view.findViewById(R.id.heure_depart);
+                holder.heure_arrivee = (AutoResizeTextView)view.findViewById(R.id.heure_arrivee);
 
-                 row.setTag(holder);
+                view.setTag(holder);
             } else {
-                holder = (ViewHolder) row.getTag();
+                holder = (ViewHolder) view.getTag();
             }
 
             if(i % 2 ==0 )
             {
-                row.setBackgroundColor(mainActivity.getResources().getColor(R.color.light_gray));
+                view.setBackgroundColor(mainActivity.getResources().getColor(R.color.light_gray));
             }
             else {
-                row.setBackgroundColor(mainActivity.getResources().getColor(R.color.white));
+                view.setBackgroundColor(mainActivity.getResources().getColor(R.color.white));
 
             }
-            HoraireData data = rows.get(i);
+            final HoraireData data = rows.get(i);
 
             if(data != null)
             {
@@ -97,14 +97,36 @@ public class TimesAdapter extends BaseAdapter {
                 holder.prix.setText(data.getPrix());
 
             }
+            final ViewHolder finalHolder = holder;
 
+               /* view.findViewById(R.id.item).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    DetailsLine d = new DetailsLine();
+
+                    Bundle b = new Bundle();
+                    b.putString("from",from);
+                    b.putString("prix", finalHolder.prix.getText().toString());
+                    b.putString("to",to);
+
+                    if(data != null)
+                    b.putInt("id",data.getId());
+
+                    b.putString("date",date);
+                    d.setArguments(b);
+
+                    ((MyApplication)mainActivity.getApplication()).setFragment(mainActivity,d,R.id.fragment_container);
+
+                }
+            });*/
 
         }catch (Exception e)
         {
             // FirebaseCrash.report(e);
         }
 
-        return row;
+        return view;
 
     }
     static class ViewHolder {

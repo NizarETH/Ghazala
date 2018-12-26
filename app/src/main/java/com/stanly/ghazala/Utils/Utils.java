@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.support.design.widget.Snackbar;
 import android.util.Log;
@@ -24,9 +25,21 @@ import com.stanly.ghazala.Beans.Data;
 import com.stanly.ghazala.Beans.HoraireData;
 import com.stanly.ghazala.R;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.URLEncoder;
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -44,6 +57,79 @@ public class Utils {
 
 
 
+    public static String Download_icon(String link, MainActivity activity) throws IOException {
+        if (!link.contains(".png")) {
+            link = link.concat(".png");
+        }
+
+        String paths = "";
+        String DIRECTORY_IMAGES = activity.getPackageName() + "_images";
+        if (link != null && !link.isEmpty() && link.contains("http")) {
+
+            String path = link;
+
+            String[] temp = path.split("/");
+            String imageName = temp[temp.length - 1];
+            //Log.i("Image Name", imageName);
+            path.replaceAll(imageName, "");
+            String newFilePath = "";
+            int templength = temp.length;
+            for (int j = 0; j < templength - 1; j++) {
+                newFilePath = newFilePath + temp[j] + "/";
+            }
+
+            String root = getFirstWritableDirectory().toString();
+            String optimized = "thumbs1";
+
+            File myDir = new File(root + "/" + DIRECTORY_IMAGES + "/" + optimized);
+            myDir.mkdirs();
+
+            /* Log.e("path image", myDir.getAbsolutePath()+"/"+imageName);*/
+
+            // Setting up file to write the image to.
+
+            File f = new File(myDir, imageName);
+
+
+            if (!f.exists()) {
+                HttpClient httpclient = new DefaultHttpClient();
+
+
+                if (link != null && !link.isEmpty()) {
+
+                    link = link.replaceAll(" ", "%20");
+
+                    String[] tmp = link.split("/");
+                    String nameImage = tmp[tmp.length - 1];
+                    String correctName = URLEncoder.encode(nameImage);
+                    link = link.replace(nameImage, correctName);
+                    HttpGet httpget = new HttpGet(link);
+                    //Log.e(":::::::::::>"+link,"<::::::::");
+                    HttpResponse response = httpclient.execute(httpget);
+                    System.out.println(response.getStatusLine());
+                    HttpEntity entity = response.getEntity();
+                    InputStream is = entity.getContent();
+                    OutputStream os = new FileOutputStream(f);
+                    ImageUtils.CopyStream(is, os);
+                    final File file_illustration = f;
+
+
+                }
+            }
+
+            paths = (myDir.toString() + "/" + imageName);
+            FileInputStream fis = new FileInputStream(f);
+            //  Point point = ImageUtils.getSizeOfImage(fis);
+
+            //    illustration = new Illustration(id, link, paths, point.y, point.x);
+
+
+        }
+
+
+        return paths;
+
+    }
     public static void changeLocale(String string, Context context) {
         Configuration config = new Configuration();
         Locale locale = new Locale(string);
@@ -201,6 +287,21 @@ public class Utils {
 
 
     }
+    public static File getFirstWritableDirectory() {
+        File file1 = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath());
+        File file2 = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath());
+        File file3 = new File(Environment.getExternalStorageDirectory().getAbsolutePath());
+        if (file1.exists()) {
+            return Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+        } else if (file2.exists()) {
+            return Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+        } else if (file3.exists()) {
+            return Environment.getExternalStorageDirectory();
+        } else {
+            return Environment.getExternalStorageDirectory();
+        }
+
+    }
     public static int toMins(String s) {
         if(s.contains("Lendemain"))
         {
@@ -270,7 +371,22 @@ public class Utils {
     }
 
 
+    public static String toCity (String city)
+    {
+        String ville = "";
 
+        if(city.contains("-")) {
+            city = city.replaceAll(" ","");
+            String[] newCity = city.split("-");
+            ville = newCity[0];
+            if(ville.contains("CASA")) {
+                ville =	ville.concat("BLANCA");
+            }
+        }
+        else
+            ville = city;
 
+        return ville;
 
+    }
 }

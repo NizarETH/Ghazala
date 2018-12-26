@@ -2,6 +2,7 @@ package com.stanly.ghazala.Fragments;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -11,6 +12,8 @@ import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.CheckedTextView;
@@ -216,6 +219,28 @@ public class TimingFragment extends Fragment {
 
         });
 
+
+
+        from.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                cityFrom = (String) adapterView.getItemAtPosition(i);
+            }
+        });
+        to.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View v, int i, long l) {
+                cityTo = (String) adapterView.getItemAtPosition(i);
+                View view = getActivity().getCurrentFocus();
+                if (view != null) {
+                    InputMethodManager imm = (InputMethodManager)getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                }
+
+            }
+        });
         view.findViewById(R.id.search).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -250,38 +275,41 @@ public class TimingFragment extends Fragment {
                                     HoraireData horaireData = null;
                                     Data data = realm.where(Data.class).findFirst();
                                     int id = 0;
-                                    String DataSplit[] =  data.getHoraire().replaceAll("\\[\\{"," ")
-                                            .replaceAll("\\}"," ")
-                                            .replaceAll("\\{"," ")
-                                            .replaceAll("\\}\\]"," ")
+
+                                    if (data != null && data.getHoraire() != null) {
+
+                                    String DataSplit[] = data.getHoraire().replaceAll("\\[\\{", " ")
+                                            .replaceAll("\\}", " ")
+                                            .replaceAll("\\{", " ")
+                                            .replaceAll("\\}\\]", " ")
                                             .split(",");
 
                                     horaireData = realm.createObject(HoraireData.class, id++);
 
                                     for (int i = 0; i < DataSplit.length; i++) {
 
-                                          if(DataSplit[i].contains("ha")) {
-                                              String Ha = DataSplit[i].replaceAll("\"ha\":", "").replaceAll("\""," ");
-                                              horaireData.setHa(Ha);
-                                          }
-                                          if(DataSplit[i].contains("hd")) {
-                                              String Hd = DataSplit[i].replaceAll("\"hd\":", "").replaceAll("\""," ");
+                                        if (DataSplit[i].contains("ha")) {
+                                            String Ha = DataSplit[i].replaceAll("\"ha\":", "").replaceAll("\"", " ");
+                                            horaireData.setHa(Ha);
+                                        }
+                                        if (DataSplit[i].contains("hd")) {
+                                            String Hd = DataSplit[i].replaceAll("\"hd\":", "").replaceAll("\"", " ");
 
-                                              horaireData.setHd(Hd);
-                                          }
-                                          if(DataSplit[i].contains("prix")) {
-                                              String prix = DataSplit[i].replaceAll("\"prix\":", "").replaceAll("\""," ");
+                                            horaireData.setHd(Hd);
+                                        }
+                                        if (DataSplit[i].contains("prix")) {
+                                            String prix = DataSplit[i].replaceAll("\"prix\":", "").replaceAll("\"", " ");
 
-                                              horaireData.setPrix(prix);
-                                              horaireData = realm.createObject(HoraireData.class, id++);
+                                            horaireData.setPrix(prix);
+                                            horaireData = realm.createObject(HoraireData.class, id++);
 
-                                          }
+                                        }
                                         all.add(horaireData);
 
                                     }
                                     data.setHoraireData(all);
                                     realm.commitTransaction();
-                                    ResultsFragment resultsFragment =  new ResultsFragment();
+                                    ResultsFragment resultsFragment = new ResultsFragment();
                                     Bundle b = new Bundle();
 
                                     b.putString("depart", from.getText().toString());
@@ -289,11 +317,12 @@ public class TimingFragment extends Fragment {
                                     b.putString("date", agendaEdit.getText().toString());
                                     resultsFragment.setArguments(b);
 
-                                    ((MyApplication)getActivity().getApplication()).setUpFragment(getActivity(), resultsFragment, R.id.fragment_container);
+                                    ((MyApplication) getActivity().getApplication()).setUpFragment(getActivity(), resultsFragment, R.id.fragment_container);
 
                                     if (dialog.isShowing()) {
                                         dialog.dismiss();
                                     }
+                                }
                                  }
 
                                 @Override

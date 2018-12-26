@@ -75,7 +75,10 @@ public class AgencesAdapter extends BaseAdapter {
         } else {
             holder = (ViewHolder) row.getTag();
         }
+
+
         final Agence agency = addresse.get(i);
+
         if (agency != null && agency.getName() != null && !agency.getName().isEmpty()) {
 
             holder.agence_name.setText("" + agency.getName());
@@ -89,6 +92,7 @@ public class AgencesAdapter extends BaseAdapter {
                     onCall(agency.getPhone());
                 }
             });
+
         }
         return row;
     }

@@ -27,8 +27,9 @@
     <string name="search">Rechercher</string>
     <string name="from">De :</string>
     <string name="to">A  :</string>
+    <string name="details">Détails</string>
     <string name="work">Emplois</string>
-
+    <string name="depart1">Départ :</string>
     <string name="infos">Information</string>
     <string name="prem7"> Salon premium dans un autocar encore plus spacieux ;</string>
     <string name="prem8">Plus d’espace dans l’autocar.</string>
@@ -37,13 +38,9 @@
     <string name="prem4">Climatisation et lumière personnalisées pour illuminer vos lectures et maîtriser la température de votre voyage ;</string>
     <string name="prem3">Sièges très confortables avec tablettes et repose-jambes conçus spécialement pour vous offrir une détente et un confort optimaux ;</string>
     <string name="autocar_info">L\'autocar passe par : </string>
-    <string name="prem1">Des autocars luxueux, un confort absolu, un service irréprochable, tout a bien été véhiculé à CTM! Faites l\’expérience d’un voyage alliant confort, sécurité et plaisir. </string>
-    <string name="prem2">Avec le service Premium de CTM, vous disposez d’une multitude d’avantages pour voyager dans les meilleures conditions :
-
-Opter pour CTM Premium, c’est voyager sans escale avec des départs en aller retour chaque jour via autoroute dans le plus grand confort pour relier directement Casablanca, Rabat, Agadir, Marrakech, Fès, Tanger, Tétouan, Oujda, Beni mellal et Safi.
- </string>
+    <string name="arrivee1">Arrivée :</string>
     <string name="stanly">Contacter le développeur de l\'application </string>
-
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC0fWGGBb-6-gxZu4s_Nm1cf_Ix3sTvJes</string>
 
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
